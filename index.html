@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>itchytoes' site — How cool itchytoes is</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg1:#0f172a;--bg2:#312e81;--accent:#f59e0b;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,"Helvetica Neue",Arial}
+    body{background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 60%);color:#e6edf3;display:flex;align-items:center;justify-content:center;padding:32px}
+    .card{width:100%;max-width:980px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));box-shadow:0 10px 30px rgba(2,6,23,0.6);overflow:hidden}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px 36px}
+    .logo{display:flex;align-items:center;gap:16px}
+    .logo-badge{width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,var(--accent),#d97706);display:flex;align-items:center;justify-content:center;font-weight:800;color:#08203a;font-size:20px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:13px}
+    nav a{color:rgba(230,237,243,0.85);text-decoration:none;margin-left:18px;font-weight:600;font-size:14px}
+    main{display:flex;gap:40px;padding:36px;border-top:1px solid rgba(255,255,255,0.03)}
+    .hero{flex:1}
+    .hero h2{font-size:44px;margin:0 0 12px;line-height:1}
+    .hero p{color:var(--muted);margin:0 0 20px;font-size:16px}
+    .cta{display:inline-block;background:var(--accent);color:#081024;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
+    .highlights{width:350px;padding:8px}
+    .card-mini{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;margin-bottom:14px}
+    .mini-title{font-weight:700;margin-bottom:8px}
+    footer{padding:20px 36px;border-top:1px solid rgba(255,255,255,0.02);display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+    @media (max-width:880px){main{flex-direction:column}.highlights{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <div class="logo">
+        <div class="logo-badge">IT</div>
+        <div>
+          <h1>itchytoes’ site</h1>
+          <p class="lead">A tiny corner of the web celebrating just how cool itchytoes is.</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <h2>HOW COOL IS <span style="color:var(--accent)">ITCHYTOES</span>?</h2>
+        <p>Short answer: exceptionally. This site exists to make one clear declaration — itchytoes is very cool. Smart, adventurous, and unreasonably charming. Below are some indisputable facts and highlights proving it.</p>
+        <a class="cta" href="#highlights">See the proof</a>
+
+        <div style="margin-top:28px;background:linear-gradient(90deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:12px">
+          itchytoes is very cool.
+        </div>
+      </section>
+
+      <aside class="highlights" id="highlights">
+        <div class="card-mini">
+          <div class="mini-title">itchytoes is very cool</div>
+          <div class="mini-desc" style="color:var(--muted)">That’s it. That’s the whole fact.</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Made with ✨ for itchytoes.</div>
+      <div id="contact">Contact: <span style="color:var(--accent)">itchytoes@icloud.com</span></div>
+    </footer>
+  </div>
+</body>
+</html>
